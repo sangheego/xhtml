@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body bgcolor="aqua" text="blue">
+    <h3>커피</h3>
+    <ol>
+        <li>아메리카노1</li>
+        <li>카푸치노</li>
+    </ol>
+
+    <!--절대 경로를 이용한 이미지 출력-->
+    <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/32E9/image/BA2Qyx3O2oTyEOsXe2ZtE8cRqGk.JPG"
+    width="200" height="200"/>
+    <img src="./img/dog.jpg" width="100" height="100"/>
+
+    <!--상대 경로를 이용한 링크 설정-->
+    <p><a href="./index.html" target="-blank">인덱스</a></p>
+    <!--절대 경로를 이용한 링크 설정-->
+    <a href="https://www.google.co.kr">구글</a>
+
+     <h1 class="redarea">안녕하세요</h1>
+     <p class="redarea">반갑습니다</p>
+     <p id="adam">두번째 단락입니다.</p>
+     <button id="btn">클릭</button>
+     <script>
+        document.getElementById("btn").addEventListener(
+            "click",function(e){
+                document.getElementById("adam").innerHTML="클릭"
+            }
+        )
+     </script>
+
+     <style>
+        .redarea{
+            color:red;
+        }
+    </style>
+</body>
+</html>
